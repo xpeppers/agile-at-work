@@ -47,7 +47,7 @@ body .header {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-image: url('/images/agile-wall.jpg');
+    background-image: url('../images/agile-wall.jpg');
 }
 
 .navbar-brand, .navbar-brand:hover {
