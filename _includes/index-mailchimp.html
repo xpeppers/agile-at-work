@@ -13,6 +13,14 @@ Surjith S M / @surjithctly
  -->
 
 <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+      .sponsors {
+        margin-bottom: 50px;
+      }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -118,31 +126,31 @@ Surjith S M / @surjithctly
     <header id="top" class="header">
         <div class="container">
 
-            <div class="header_top-bg">
+            <div class="header_top-bg1">
                 <div class="logo">
-                    <a href="#"><img src="images/event-logo.png" alt="event-logo"></a>
+                    <a href="#" style="color: white;font-weight: bold;font-size: 80px;">
+                      Agile@Work
+                      <!-- <img src="images/event-logo.png" alt="event-logo"> -->
+                    </a>
                 </div>
             </div>
 
-            <h3 class="headline-support wow fadeInDown">A CREATIVE CONFERENCE</h3>
-            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">INSPIRE. CREATE. REPEAT. </h1>
+            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">AGILE. DEVOPS. CLOUD. </h1>
 
             <div class="when_where wow fadeIn" data-wow-delay="0.4s">
-                <p class="event_when">December 4th 2015</p>
-                <p class="event_where">Bolzano, Italy</p>
+                <p class="event_when">December 4th 2015, Bolzano - Italy</p>
             </div>
 
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <form action="php/subscribe.php" method="post" class="form subscribe-form inverted-form" id="subscribeform">
-
                         <div class="form-group col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
                             <label class="sr-only">Email address</label>
-                            <input type="email" class="form-control input-lg" placeholder="Enter your email" name="email" id="email" required>
+                            <input type="email" class="form-control input-lg" placeholder="Enter your email to get updates" name="email" id="email" required>
                             <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong."></div>
                         </div>
                         <div class="form-group col-md-5 col-sm-4">
-                            <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">Subscribe Now</button>
+                            <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">SIGN UP NOW</button>
                         </div>
                     </form>
                 </div>
@@ -164,7 +172,13 @@ Surjith S M / @surjithctly
     <section class="highlight">
 
         <div class="container">
-            <p class="lead text-center">Gather is a responsive website template for events, conferences, meetups, webinars etc. This template can be used of all type of gatherings. It has many features specifically designed for events like RSVP, Eventbrite Integration, Subscribe and contact. it also comes with different color versions to choose.</p>
+            <p class="lead text-center">
+              A <strong>1-day, double track conference</strong> about real world experiences on applied Agile methodologies,
+              <br/>
+              DevOps principles and Cloud infrastructure transformations.
+              <br/>
+              You will attend practical <strong>workshops</strong>, <strong>training</strong> sessions and <strong>talks of case studies</strong>.
+            </p>
 
             <div class="countdown_wrap">
 
@@ -221,7 +235,7 @@ Surjith S M / @surjithctly
      Our Speakers
      ====================================== -->
 
-    <section class="speakers" id="speakers">
+    <section class="speakers hidden" id="speakers">
         <div class="container">
 
             <div class="section-title wow fadeInUp">
@@ -304,7 +318,7 @@ Surjith S M / @surjithctly
      Our Schedule
      ====================================== -->
 
-    <section class="schedule" id="schedule">
+    <section class="schedule hidden" id="schedule">
 
         <div class="container">
             <div class="section-title wow fadeInUp">
@@ -314,8 +328,8 @@ Surjith S M / @surjithctly
             <div class="nav-center">
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills" role="tablist" id="schedule-tabs">
-                    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Day One</a></li>
-                    <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Day Two</a></li>
+                    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Track One</a></li>
+                    <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Track Two</a></li>
                     <!-- <li role="presentation"><a href="#day3" aria-controls="messages" role="tab" data-toggle="tab">Day Three</a></li> -->
                 </ul>
 
@@ -613,7 +627,7 @@ Surjith S M / @surjithctly
      Embeded Twitter Testimonials
      ====================================== -->
 
-    <section class="embed_twitter">
+    <section class="embed_twitter hidden">
 
         <div class="container">
             <div class="section-title wow fadeInUp">
@@ -663,7 +677,7 @@ Surjith S M / @surjithctly
      Gallery
      ====================================== -->
 
-    <section class="gallery" id="gallery">
+    <section class="gallery hidden" id="gallery">
         <div class="container">
             <div class="section-title">
                 <h4>GALLERY</h4>
@@ -770,7 +784,7 @@ Surjith S M / @surjithctly
      Accommodation
      ====================================== -->
 
-    <section class="highlight accommodation">
+    <section class="highlight accommodation hidden">
 
         <div class="container">
             <div class="section-title wow fadeInUp">
@@ -816,69 +830,6 @@ Surjith S M / @surjithctly
     </section>
     <!-- end section.accommodation -->
 
-    <!--
-     Pricing
-     ====================================== -->
-
-    <section class="pricing" id="pricing">
-
-        <div class="container">
-
-            <div class="section-title">
-                <h4>PRICING</h4>
-                <p>Choose your favorite pass for the event.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="pricing-item  wow zoomIn" data-wow-duration="2s">
-                        <div class="plan-name">Silver Pass</div>
-                        <div class="price"> <span class="curr">$</span>49</div>
-
-                        <ul class="plan-features">
-                            <li> Regular Seating </li>
-                            <li> Free Snacks</li>
-                            <li> Custom Swags</li>
-                            <li> Certificate</li>
-                        </ul>
-                        <a class="btn btn-outline btn-lg" href="#">Choose Silver Pass</a>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-item highlighted-plan wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
-                        <div class="plan-name">Gold Pass</div>
-                        <div class="price"> <span class="curr">$</span>99</div>
-
-                        <ul class="plan-features">
-                            <li> Front Seating </li>
-                            <li> Free Coffee / Snacks</li>
-                            <li> Free T-Shirt</li>
-                            <li> Custom Swags</li>
-                        </ul>
-                        <a class="btn btn-success btn-lg" href="#">Choose Gold Pass</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-item wow zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                        <div class="plan-name">Vip Pass</div>
-                        <div class="price"> <span class="curr">$</span>149</div>
-                        <ul class="plan-features">
-                            <li> VIP Seating </li>
-                            <li> Buffet Lunch</li>
-                            <li> Free T-Shirt</li>
-                            <li> Crumpler Backpack</li>
-                        </ul>
-                        <a class="btn btn-outline btn-lg" href="#">Choose VIP Pass</a>
-                    </div>
-                </div>
-                 </div>
-            </div>
-    </section>
-    <!-- end section.pricing -->
-    <!--
-     Pricing
-     ====================================== -->
 
     <section class="faq">
 
@@ -917,10 +868,11 @@ Surjith S M / @surjithctly
         <div class="container">
             <div class="section-title wow fadeInUp">
                 <h4>OUR SPONSORS</h4>
-                <p>Event is supported by easily recognisable companies and products which we use everyday.</p>
             </div>
 
-            <div class="sponsor-slider wow bounceIn">
+            <div><img src="http://www.xpeppers.com/wp-content/uploads/2014/04/xxpeppers-logo-opt.png.pagespeed.ic.OUcFswEG0I.png" class="img-responsive center-block" alt="sponsor"></div>
+
+            <div class="sponsor-slider wow bounceIn hidden">
                 <div><img src="images/sponsor_1.png" class="img-responsive center-block" alt="sponsor"> </div>
                 <div><img src="images/sponsor_2.png" class="img-responsive center-block" alt="sponsor"> </div>
                 <div><img src="images/sponsor_3.png" class="img-responsive center-block" alt="sponsor"> </div>
@@ -1021,7 +973,7 @@ Surjith S M / @surjithctly
      Contact us
      ====================================== -->
 
-    <div class="highlight">
+    <div class="highlight hidden">
         <div class="container">
 
             <div class="row">
@@ -1053,64 +1005,6 @@ Surjith S M / @surjithctly
         </div>
     </div>
     <!-- //  end .highlight -->
-
-    <div class="container" id="contact">
-        <div class="section-title">
-            <h5>SEND US A MESSAGE</h5>
-            <p>If you have any questions about the event, please contact us directly. We will respond for sure.</p>
-        </div>
-
-        <div class="contact-form bottom-space-xl wow fadeInUp">
-
-            <form action="php/contact.php" id="phpcontactform" method="POST">
-                <div class="row">
-
-                    <div class="col-md-6 col-md-offset-3">
-
-                        <div class="row">
-
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
-
-                                </div>
-
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control" name="last_name" placeholder="last name" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Email ID</label>
-                            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Your Message</label>
-                            <textarea class="form-control" name="message" rows="6" placeholder="Enter your message here" required> </textarea>
-                        </div>
-
-                        <div class="text-center top-space">
-                            <button type="submit" class="btn btn-success btn-block btn-lg" id="js-contact-btn">Send Message</button>
-                            <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
-                        </div>
-
-                    </div>
-                </div>
-            </form>
-        </div>
-
-    </div>
-    <!-- // end .container -->
 
     <!--
      Footer Call to Action
@@ -1163,7 +1057,6 @@ Surjith S M / @surjithctly
     <script src="js/plugins/validate.js"></script>
     <script src="js/plugins/appear.js"></script>
     <script src="js/plugins/count-to.js"></script>
-    <script src="js/plugins/nicescroll.js"></script>
 
     <!-- Google Map -->
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
