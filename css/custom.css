@@ -4,18 +4,22 @@
 .sponsors {
     margin-bottom: 50px;
 }
-.header_bottom-bg {
-    background: none !important;
-    background-image: none !important;
+body .header_bottom-bg {
+    background: none;
+    background-image: none;
 }
-.header {
+body .header {
     position: relative;
     min-height: 500px;
-    background: none !important;
-    background-image: none !important;
-    background-color: none !important;
+    background: none;
+    background-image: none;
+    background-color: none;
+
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
-.header:before {
+
+.header:after {
     content: '';
     display: block;
     position: absolute;
@@ -27,8 +31,25 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: rgb(18, 27, 19);
+    background-color: rgba(18, 27, 19,0.8);
+}
+
+.header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.9;
+    background-size: 1400px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-image: url('/images/agile-wall.jpg');
 }
+
 .navbar-brand, .navbar-brand:hover {
     color: #FFF !important;
     background-color: #4eae49 !important;
@@ -77,3 +98,8 @@
   text-decoration: none;
 
 }
+
+.event_when {
+  font-style: italic !important;
+}
+
