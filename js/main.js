@@ -30,22 +30,22 @@ $(function() {
        Parallax Header
        ================================================ */
 
-    if ($('.parallax-bg').length) {
-        $('.parallax-bg').parallax({
-            speed: 0.20
-        });
-    }
+    // if ($('.parallax-bg').length) {
+    //     $('.parallax-bg').parallax({
+    //         speed: 0.20
+    //     });
+    // }
 
     /* ================================================
        FLEX SLIDER
        ================================================ */
 
-    if ($('.flexslider').length) {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            useCSS: Modernizr.touch
-        });
-    }
+    // if ($('.flexslider').length) {
+    //     $('.flexslider').flexslider({
+    //         animation: "slide",
+    //         useCSS: Modernizr.touch
+    //     });
+    // }
 
     /* ================================================
        Initialize Countdown
@@ -83,14 +83,14 @@ $(function() {
     });
 
     /* ================================================
-       Initialize Slick Slider 
+       Initialize Slick Slider
        ================================================ */
 
-    /* 
+    /*
        SLICK SLIDER
        ------------ */
 
-    if ($('.slick-slider').length) {
+    if (false && $('.slick-slider').length) {
         $('.slick-slider').slick({
             slidesToShow: 6,
             slidesToScroll: 6,
@@ -121,11 +121,11 @@ $(function() {
         });
     }
 
-    /* 
+    /*
     SPONSORS
     -------- */
 
-    if ($('.sponsor-slider').length) {
+    if (false && $('.sponsor-slider').length) {
         $('.sponsor-slider').slick({
             centerMode: true,
             centerPadding: '30px',
@@ -152,11 +152,11 @@ $(function() {
         });
     }
 
-    /* 
+    /*
        SPEAKERS
        -------- */
 
-    if ($('.speaker-slider').length) {
+    if (false && $('.speaker-slider').length) {
         $('.speaker-slider').slick({
             slidesToShow: 6,
             autoplay: false,
@@ -220,7 +220,7 @@ $(".play-video").on("click",function(e) {
 /* ================================================
    Magnific Popup
    ================================================ */
-if ($('.popup-gallery').length) {
+if (false && $('.popup-gallery').length) {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -352,7 +352,7 @@ $(function() {
        Initialize WOW JS
        ================================================ */
 
-    if ($('body').hasClass('animate-page')) {
+    if (false && $('body').hasClass('animate-page')) {
         wow = new WOW({
             animateClass: 'animated',
             offset: 100,
