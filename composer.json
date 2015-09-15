@@ -1,0 +1,12 @@
+{
+  "name": "xpeppers/agile-at-work",
+  "authors": [{
+    "name": "XPeppers",
+    "email": "agileatwork@xpeppers.com"
+  }],
+  "require": {
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}
