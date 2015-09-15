@@ -4,7 +4,7 @@
     "name": "XPeppers",
     "email": "agileatwork@xpeppers.com"
   }],
-  "require": {
+  "require-dev": {
     "heroku/heroku-buildpack-php": "*"
   }
 }
