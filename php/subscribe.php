@@ -1,18 +1,21 @@
 <?php
 
+  ini_set("display_errors", "0");
+  error_reporting(0);
+
 /*
  * ------------------------------------
  * Mailchimp Email Configuration
  * ------------------------------------
  */
 
-$apiKey       = 'e04c8d1186959dbfc5e645a02805a3d9-us7'; /*Your Mailchiimp API Key*/
-$listId       = 'bdcd4b0a73'; /*Mailchimp List ID*/
-$double_optin = true; /*Set False if you don't need to verify user enmail */
-$send_welcome = true; /* Send Welcome email to new users */
+$apiKey       = 'e66f49ed321fbc07086e2cc2461cab27-us11';
+$listId       = '4397172460';
+$double_optin = true; // set false if you don't need to verify user enmail
+$send_welcome = true; // send welcome email to new users
 $email        = $_POST['email'];
-$fname        = ''; 
-$lname        = ''; 
+$fname        = '';
+$lname        = '';
 $datacenter	  = explode( '-', $apiKey );
 $post_url     = 'https://' . $datacenter[1] . '.api.mailchimp.com/2.0/lists/subscribe.json?';
 
@@ -71,5 +74,4 @@ if (!empty($email)) {
 		echo 'success';
 	}
 
-} 
-?>
+}
