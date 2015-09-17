@@ -68,10 +68,12 @@ $(function() {
              AJAX POST
              --------- */
 
+             console.log(form)
+
             $.ajax({
                 type: "POST",
                 data: dataString,
-                url: "php/subscribe.php",
+                url: $(form).attr('action'),
                 cache: false,
                 success: function(d) {
                     $(".form-group").removeClass("has-success");
