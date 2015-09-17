@@ -1,6 +1,6 @@
 <?php
-
   ini_set("display_errors", "0");
+  header("Access-Control-Allow-Origin: *");
   error_reporting(0);
 
 /*
