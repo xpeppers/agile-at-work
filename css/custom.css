@@ -93,6 +93,23 @@ body .header {
     line-height: 1.3;
 }
 
+@media all and (max-width: 768px) {
+    .heading {
+        font-size: 60px;
+    }
+    .headline {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    .heading {
+        font-size: 45px;
+    }
+    .headline {
+        font-size: 30px;
+    }
+}
+
 .heading:hover, .heading:active, .heading:focus {
   color: white;
   text-decoration: none;
