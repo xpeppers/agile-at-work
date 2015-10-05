@@ -1,17 +1,14 @@
 .hidden {
     display: none;
 }
+
 .sponsors {
-    margin-bottom: 85px;
+    margin-bottom: 35px;
 }
 
 img.sponsor {
     width: 300px;
     margin-bottom: 50px;
-}
-
-img.sponsor:last-child {
-    margin-bottom: 0px;
 }
 
 body .header_bottom-bg {
