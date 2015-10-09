@@ -6,9 +6,37 @@
     margin-bottom: 35px;
 }
 
-img.sponsor {
-    width: 300px;
-    margin-bottom: 50px;
+.sponsors-slider {
+  text-align: center;
+
+}
+
+.sponsor {
+  display: inline-block;
+  margin-right: 75px;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 1000px) {
+  .sponsor {
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.sponsor.main img {
+  max-height: 131px;
+}
+
+.sponsor:last-child {
+  margin-right: 0;
+}
+
+.sponsor img {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 100px;
+    margin-bottom: 20px;
 }
 
 body .header_bottom-bg {
@@ -128,3 +156,7 @@ body .header {
   font-style: italic !important;
 }
 
+
+.btn-default:hover {
+  background-color: rgb(180,180,180) !important;
+}
