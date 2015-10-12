@@ -42,19 +42,19 @@
         <h1 class="headline fadeInDown">AGILE. DEVOPS. CLOUD. </h1>
 
         <div class="when_where">
-            <p class="event_when">December 4th 2015, Bolzano - Italy</p>
+            <p class="event_when">{{ site.data.t[page.locale].event_when }}</p>
         </div>
 
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2">
                 <form action="http://agile-at-work.herokuapp.com/subscribe.php" method="post" class="form subscribe-form inverted-form" id="subscribeform">
                     <div class="form-group col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-                        <label class="sr-only">Email address</label>
-                        <input type="email" class="form-control input-lg" placeholder="Enter your email to get updates" name="email" id="email" required>
-                        <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong."></div>
+                        <label class="sr-only">{{ site.data.t[page.locale].email }}</label>
+                        <input type="email" class="form-control input-lg" placeholder="{{ site.data.t[page.locale].email_placeholder }}" name="email" id="email" required>
+                        <div id="js-subscribe-result" class="text-center" data-success-msg="{{ site.data.t[page.locale].email_subscribe_success }}" data-error-msg="{{ site.data.t[page.locale].email_subscribe_error }}"></div>
                     </div>
                     <div class="form-group col-md-5 col-sm-4">
-                        <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">SIGN UP NOW</button>
+                        <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">{{ site.data.t[page.locale].signup_now }}</button>
                     </div>
                 </form>
             </div>
