@@ -37,10 +37,9 @@
                         <label class="sr-only">Travel mode:</label>
 
                         <label class="radio-inline" for="travelMode1">
-                            <input type="radio" name="travelMode" id="travelMode1" value="DRIVING" checked /> Driving
-                        </label>
+                            <input type="radio" name="travelMode" id="travelMode1" value="DRIVING" checked />{{ site.data.t[page.locale].travel_driving }}                            </label>
                         <label class="radio-inline" for="travelMode2">
-                            <input type="radio" name="travelMode" id="travelMode2" value="BICYCLING" /> Bicylcing
+                            <input type="radio" name="travelMode" id="travelMode2" value="BICYCLING" />{{ site.data.t[page.locale].travel_bicycling }}
                         </label>
                         <!--
                         <label class="radio-inline" for="travelMode3">
@@ -48,7 +47,7 @@
                         </label>
                         -->
                         <label class="radio-inline" for="travelMode4">
-                            <input type="radio" name="travelMode" id="travelMode4" value="WALKING" /> Walking
+                            <input type="radio" name="travelMode" id="travelMode4" value="WALKING" />{{ site.data.t[page.locale].travel_walking }}
                         </label>
 
                     </div>

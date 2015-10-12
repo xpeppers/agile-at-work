@@ -24,6 +24,9 @@ en:
   minutes: "Minutes"
   seconds: "Seconds"
   add_to_calendar: "Add to calendar"
+  travel_driving: "Driving"
+  travel_bicycling: "Bicycling"
+  travel_walking: "Walking"
 
 de:
   organizers: "Wer"
@@ -51,6 +54,9 @@ de:
   minutes: "Minutes"
   seconds: "Seconds"
   add_to_calendar: "Zum Kalender hinzufügen"
+  travel_driving: "Auto"
+  travel_bicycling: "Fahrrad"
+  travel_walking: "Zu Fuß"
 
 it:
   organizers: "Chi"
@@ -78,3 +84,6 @@ it:
   minutes: "Minuti"
   seconds: "Secondi"
   add_to_calendar: "Aggiungi al calendario"
+  travel_driving: "In macchina"
+  travel_bicycling: "In bici"
+  travel_walking: "A piedi"
