@@ -15,6 +15,7 @@
   display: inline-block;
   margin-right: 75px;
   margin-bottom: 50px;
+  vertical-align: bottom;
 }
 
 @media all and (max-width: 1000px) {
@@ -36,7 +37,6 @@
     display: inline-block;
     max-width: 300px;
     max-height: 100px;
-    margin-bottom: 20px;
 }
 
 body .header_bottom-bg {

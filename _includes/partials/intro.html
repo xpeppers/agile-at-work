@@ -1,36 +1,45 @@
 <section class="highlight">
     <div class="container">
         <p class="lead text-center">
-          A <strong>1-day, double track conference</strong> about real world experiences on applied Agile methodologies,
-          <br/>
-          DevOps principles and Cloud infrastructure transformations.
-          <br/>
-          You will attend practical <strong>workshops</strong>, <strong>training</strong> sessions and <strong>talks of case studies</strong>.
+          {% if page.locale == "en" %}
+            A <strong>1-day, double track conference</strong> about real world experiences on applied Agile methodologies,
+            <br/>
+            DevOps principles and Cloud infrastructure transformations.
+            <br/>
+            You will attend practical <strong>workshops</strong>, <strong>training</strong> sessions and<strong> talks of case studies</strong>.
+          {% endif %}
+          {% if page.locale == "de" %}
+            Eine <strong>eintägige Konferenz</strong> über Agile Softwareentwicklugsmethoden,
+            <br/>
+            DevOps Prinzipien und Cloud infrastructure Verwandlungen in der Praxis angewandt.
+            <br/>
+            Es werden praxis-orientierte <strong>Workshops</strong>, <strong>Training</strong> sessions und<strong> Vorträge über Fallstudien</strong> angeboten.
+          {% endif %}
         </p>
 
         <div class="countdown_wrap">
 
-            <h6 class="countdown_title text-center">EVENT WILL START IN</h6>
+            <h6 class="countdown_title text-center">{{ site.data.t[page.locale].event_will_start_in }}</h6>
 
             <ul id="countdown" data-event-date="4 december 2015 10:00:00">
                 <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
-                    <p class="timeRefDays">days</p>
+                    <p class="timeRefDays">{{ site.data.t[page.locale].days }}</p>
                 </li>
                 <li class="wow zoomIn" data-wow-delay="0.2s"> <span class="hours">00</span>
-                    <p class="timeRefHours">hours</p>
+                    <p class="timeRefHours">{{ site.data.t[page.locale].hours }}</p>
                 </li>
                 <li class="wow zoomIn" data-wow-delay="0.4s"> <span class="minutes">00</span>
-                    <p class="timeRefMinutes">minutes</p>
+                    <p class="timeRefMinutes">{{ site.data.t[page.locale].minutes }}</p>
                 </li>
                 <li class="wow zoomIn" data-wow-delay="0.6s"> <span class="seconds">00</span>
-                    <p class="timeRefSeconds">seconds</p>
+                    <p class="timeRefSeconds">{{ site.data.t[page.locale].seconds }}</p>
                 </li>
             </ul>
         </div>
 
         <div class="text-center">
             <span class="addtocalendar atc-style-theme">
-            <a class="atcb-link"><i class="fa fa-calendar"> </i> Add to My Calendar</a>
+            <a class="atcb-link"><i class="fa fa-calendar"> </i> {{ site.data.t[page.locale].add_to_calendar }}</a>
               <var class="atc_event">
                   <var class="atc_date_start">2014-12-04 10:00:00</var>
                   <var class="atc_date_end">2014-12-04 17:30:00</var>

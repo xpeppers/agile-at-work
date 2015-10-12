@@ -8,6 +8,12 @@ en:
   email_subscribe_success: "Almost finished. Please check your email and verify."
   email_subscribe_error: "Oops. Something went wrong."
   signup_now: "SIGN UP NOW"
+  days: "Days"
+  event_will_start_in: "Event will start in"
+  hours: "Hours"
+  minutes: "Minutes"
+  seconds: "Seconds"
+  add_to_calendar: "Add to calendar"
 
 de:
   organizers: "Organisatoren"
@@ -19,3 +25,9 @@ de:
   email_subscribe_success: "Almost finished. Please check your email and verify."
   email_subscribe_error: "Oops. Something went wrong."
   signup_now: "SIGN UP NOW"
+  days: "Tagen"
+  event_will_start_in: "Veranstaltung startet in"
+  hours: "Stunden"
+  minutes: "Minutes"
+  seconds: "Seconds"
+  add_to_calendar: "Zum Kalender hinzufügen"
