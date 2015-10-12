@@ -13,7 +13,6 @@
               <li class="active-forever">
                 <a class="navbar-brand" href="#">
                   Agile@Work
-                  <!-- <img src="images/event-logo-dark.png" alt="Gather"> -->
                 </a>
               </li>
             </ul>
@@ -21,12 +20,11 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- <li><a href="#speakers">Speakers</a></li> -->
                 <!-- <li><a href="#schedule">Schedule</a></li> -->
-                <li><a href="#sponsors" class="hidden-sm">Organizers</a></li>
-                <li><a href="#venue" class="hidden-sm">Venue</a></li>
-                <li><a href="#footer-action" class="hidden-sm">Signup</a></li>
+                <li><a href="#sponsors" class="hidden-sm">{{ site.data.t[page.locale].organizers }}</a></li>
+                <li><a href="#venue" class="hidden-sm">{{ site.data.t[page.locale].venue }}</a></li>
+                <li><a href="#footer-action" class="hidden-sm">{{ site.data.t[page.locale].signup }}</a></li>
             </ul>
         </div>
-        <!--/.nav-collapse -->
     </div>
 </nav>
 
