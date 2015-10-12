@@ -1,5 +1,5 @@
 en:
-  organizers: "Organizers"
+  organizers: "Who"
   venue: "Venue"
   location: "Bolzano, Italy"
   footer_headline1: "LETS GATHER TOGETHER"
@@ -26,7 +26,7 @@ en:
   add_to_calendar: "Add to calendar"
 
 de:
-  organizers: "Organisatoren"
+  organizers: "Wer"
   venue: "Ort"
   location: "Bozen, Italien"
   footer_headline1: ""
@@ -53,7 +53,7 @@ de:
   add_to_calendar: "Zum Kalender hinzufügen"
 
 it:
-  organizers: "Organizzatori"
+  organizers: "Chi"
   venue: "Luogo"
   location: "Bolzano, Italia"
   footer_headline1: ""
