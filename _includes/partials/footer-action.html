@@ -2,25 +2,11 @@
 
     <div class="container">
 
-        <h4 class="headline-support wow fadeInDown">LETS GATHER TOGETHER</h4>
-        <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">JOIN THE CONFERENCE</h2>
+        <h4 class="headline-support wow fadeInDown">{{ site.data.t[page.locale].footer_headline1 }}</h4>
+        <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">{{ site.data.t[page.locale].footer_headline2 }}</h2>
 
         <div class="footer_bottom-bg">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <form action="http://agile-at-work.herokuapp.com/subscribe.php" method="post" class="form subscribe-form inverted-form" id="subscribeform">
-                        <div class="form-group col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-                            <label class="sr-only">Email address</label>
-                            <input type="email" class="form-control input-lg" placeholder="Enter your email to get updates" name="email" id="email" required>
-                            <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong."></div>
-                        </div>
-                        <div class="form-group col-md-5 col-sm-4">
-                            <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">SIGN UP NOW</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
+            {% include partials/signup-form.html %}
         </div>
 
     </div>

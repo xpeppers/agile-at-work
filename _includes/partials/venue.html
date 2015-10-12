@@ -3,15 +3,15 @@
     <!-- Tip:  You can change location, zoom, color theme, height, image and Info text by changing data-* attribute below. -->
     <!-- Available Colors:    red, orange, yellow, green, mint, aqua, blue, purple, pink, white, grey, black, invert -->
 
-    <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="images/marker.png" data-info="Bolzano, Italy"></div>
+    <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="images/marker.png" data-info="{{ site.data.t[page.locale].location }}"></div>
 </div>
 
 <section id="directions" class="directions vertical-space-lg">
 
     <div class="container">
         <div class="section-title wow fadeInUp top-space-sm">
-            <h4>GET DIRECTIONS</h4>
-            <p>Fill the form below to get directions to our event location</p>
+            <h4>{{ site.data.t[page.locale].get_directions }}</h4>
+            <p>{{ site.data.t[page.locale].get_directions_fill_out_form }}</p>
         </div>
 
         <div class="row">
@@ -22,13 +22,13 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="routeStart">Direction From:</label>
+                                <label for="routeStart">{{ site.data.t[page.locale].directions_from }}:</label>
                                 <input type="text" id="routeStart" class="form-control" placeholder="Milan">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="routeVia">Via<small>(Optional)</small> </label>
+                                <label for="routeVia">{{ site.data.t[page.locale].via }}<small>(Optional)</small> </label>
                                 <input type="text" class="form-control" id="routeVia" value="">
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                 <div class="directions-results">
 
                     <div id="directionsPanel">
-                        <div class="direction-text">Enter Direction from and Travel Mode from the left form to see directions. </div>
+                        <div class="direction-text">{{ site.data.t[page.locale].directions_text }}</div>
                     </div>
                 </div>
             </div>
