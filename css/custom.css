@@ -50,6 +50,8 @@ body .header {
     background-image: none;
     background-color: none;
 
+    margin-top: 50px;
+
     padding-top: 100px !important;
     padding-bottom: 100px !important;
 }
