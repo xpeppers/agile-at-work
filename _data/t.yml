@@ -50,7 +50,7 @@ de:
   event_will_start_in: "Die Veranstaltung startet in"
   schedule: "ZEITPLAN"
   schedule_placeholder: "Der Zeitplan wird in Kürze zur Verfügung stehen"
-  schedule_summary: "Check-in ab 09.00 Uhr , Konferenz beginnen um 10:00 Uhr. Die Veranstaltung ended um 17:45 Uhr."
+  schedule_summary: "Check-in ab 09.00 Uhr, die Konferenz beginnt um 10:00 Uhr. Die Veranstaltung endet um 17:45 Uhr"
   days: "Tage"
   hours: "Stunden"
   minutes: "Minutes"
