@@ -80,7 +80,7 @@ it:
   signup_now: "TIENIMI AGGIORNATO"
   event_will_start_in: "L'evento inizierà tra"
   schedule: "PROGRAMMA"
-  schedule_placeholder: "A breve sarà disponibile il programma.."
+  schedule_placeholder: "A breve sarà disponibile il programma."
   schedule_summary: "Check-in dalle 9:00, inizio lavori alle 10:00. L'evento si chiuderà alle 17:45."
   days: "Giorni"
   hours: "Ore"
