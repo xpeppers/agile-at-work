@@ -156,7 +156,7 @@ $(function() {
        SPEAKERS
        -------- */
 
-    if (false && $('.speaker-slider').length) {
+    if ($('.speaker-slider').length) {
         $('.speaker-slider').slick({
             slidesToShow: 6,
             autoplay: false,

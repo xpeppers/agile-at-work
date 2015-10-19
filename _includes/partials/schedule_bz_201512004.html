@@ -1,0 +1,78 @@
+<section class="schedule" id="schedule">
+
+    <div class="container">
+        <div class="section-title wow fadeInUp">
+            <h4>{{ site.data.t[page.locale].schedule }}</h4>
+            <h5>{{ site.data.t[page.locale].schedule_placeholder }}</h5>
+        </div>
+
+        <table class="table table-striped table-hover ">
+          <thead>
+            <tr>
+              <th class="text-center col-md-2"></th>
+              <th class="text-center col-md-5">{{ site.data.t[page.locale].schedule_header_track_one}}</th>
+              <th class="text-center col-md-5">{{ site.data.t[page.locale].schedule_header_track_two}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center warning">
+              <td>9:00</td>
+              <td colspan="2"><em>{{ site.data.t[page.locale].schedule_check_in}}</em></td>
+            </tr>
+            <tr class="info">
+              <td class="text-center">9:45</td>
+              <td class="text-center" colspan="2"><em>{{ site.data.t[page.locale].schedule_opening}}</em></td>
+            </tr>
+            <tr class="text-center">
+              <td>10:00</td>
+              <td colspan="2"><strong>{{ site.data.t[page.locale].schedule_talk_keynote}}</strong></td>
+            </tr>
+            <tr class="text-center">
+              <td>10:45</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_1}}</td>
+              <td rowspan="3">{{ site.data.t[page.locale].schedule_workshop_1}}</td>
+            </tr>
+            <tr class="text-center">
+              <td>11:30</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_2}}</td>
+            </tr>
+            <tr class="text-center">
+              <td>12:15</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_3}}</td>
+            </tr>
+            <tr class="text-center success">
+              <td>13:00</td>
+              <td colspan="2"><em>{{ site.data.t[page.locale].schedule_lunch}}</em></td>
+            </tr>
+            <tr class="text-center">
+              <td>14:00</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_4}}</td>
+              <td rowspan="2">{{ site.data.t[page.locale].schedule_workshop_2}}</td>
+            </tr>
+            <tr class="text-center">
+              <td>14:45</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_5}}</td>
+            </tr>
+            <tr class="text-center success">
+              <td>15:30</td>
+              <td colspan="2"><em>{{ site.data.t[page.locale].schedule_coffee_break}}</em></td>
+            </tr>
+            <tr class="text-center">
+              <td>16:00</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_6}}</td>
+              <td rowspan="2">{{ site.data.t[page.locale].schedule_workshop_3}}</td>
+            </tr>
+            <tr class="text-center">
+              <td>16:45</td>
+              <td>{{ site.data.t[page.locale].schedule_talk_7}}</td>
+            </tr>
+            <tr class="text-center info">
+              <td>17:30</td>
+              <td colspan="2"><em>{{ site.data.t[page.locale].schedule_ending}}</em></td>
+            </tr>
+        </tbody>
+        </table> 
+
+    </div>
+
+</section>
