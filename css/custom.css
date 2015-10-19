@@ -162,3 +162,12 @@ body .header {
 .btn-default:hover {
   background-color: rgb(180,180,180) !important;
 }
+
+.eventbrite-container {
+  width:100%;
+  text-align:left;
+}
+
+.eventbrite-container iframe {
+  height: 300px;
+}
