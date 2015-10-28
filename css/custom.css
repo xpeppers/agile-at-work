@@ -88,7 +88,7 @@ body .header {
     background-image: url('../images/agile-wall.jpg');
 }
 
-.navbar-brand, .navbar-brand:hover {
+.navbar-brand {
     color: #FFF !important;
     background-color: #4eae49 !important;
     background-color: rgb(78, 174, 73) !important;
