@@ -171,3 +171,22 @@ body .header {
 .eventbrite-container iframe {
   height: 300px;
 }
+
+
+.schedule-bg-talk-1 {
+    background-color: #a4c2f4;
+}
+
+.schedule-bg-talk-2 {
+    background-color: #c9daf8;
+}
+
+.schedule-bg-workshop-1 {
+    background-color: #d5a6bd;
+}
+
+.schedule-bg-workshop-2 {
+    background-color: #ead1dc;
+}
+
+
