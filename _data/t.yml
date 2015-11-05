@@ -34,6 +34,7 @@ en:
   travel_driving: "Driving"
   travel_bicycling: "Bicycling"
   travel_walking: "Walking"
+  event_ortanized_with: "In collaboration with"
 
 de:
   organizers: "Wer"
@@ -71,6 +72,7 @@ de:
   travel_driving: "Auto"
   travel_bicycling: "Fahrrad"
   travel_walking: "Zu Fuß"
+  event_ortanized_with: "In samenwerking met"
 
 it:
   organizers: "Chi"
@@ -108,3 +110,5 @@ it:
   travel_driving: "In macchina"
   travel_bicycling: "In bici"
   travel_walking: "A piedi"
+  event_ortanized_with: "In collaborazione con"
+
