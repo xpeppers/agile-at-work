@@ -1,4 +1,6 @@
-# agile-at-work
+agile@work
+===
+A full-day conference about real world experiences on applied Agile methodologies, DevOps principles and Cloud infrastructure transformations. You will attend practical workshops, training sessions and talks of case studies.
 
 ### setup
 
