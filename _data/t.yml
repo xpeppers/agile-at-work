@@ -1,6 +1,5 @@
-event_start_date: "2017-12-01 10:00:00"
-event_due_date: "2017-12-01 17:45:00"
-
+event_start_date: "2017-12-05 09:00:00"
+event_due_date: "2017-12-05 18:00:00"
 en:
   organizers: "Who"
   venue: "Venue"
@@ -15,7 +14,7 @@ en:
   directions_text: "Enter Direction from and Travel Mode from the left form to see directions."
   via: "Via"
   signup: "Join"
-  event_when: "December 2017"
+  event_when: "05 December 2017"
   event_where: "NOI Techpark"
   event_address: "Bolzano/Bozen, Italy"
   event_organizers: "XPeppers"
@@ -46,7 +45,6 @@ en:
   travel_bicycling: "Bicycling"
   travel_walking: "Walking"
   event_ortanized_with: "In collaboration with"
-
 de:
   organizers: "Wer"
   venue: "Ort"
@@ -61,7 +59,7 @@ de:
   directions_text: "Fülle das Formular aus um Webbeschreibungen für den Veranstaltungsort zu bekommen"
   via: "Über"
   signup: "Anmelden"
-  event_when: "Dezember 2017"
+  event_when: "05 Dezember 2017"
   event_where: "NOI Techpark"
   event_address: "Bozen, Italien"
   event_organizers: "XPeppers"
@@ -92,7 +90,6 @@ de:
   travel_bicycling: "Fahrrad"
   travel_walking: "Zu Fuß"
   event_ortanized_with: "In Zusammenarbeit mit"
-
 it:
   organizers: "Chi"
   venue: "Luogo"
@@ -109,7 +106,7 @@ it:
   signup: "Registrati"
   cfp_open: "LA CALL FOR PAPER È APERTA"
   join_now: "INVIA LA TUA PROPOSTA"
-  event_when: "Dicembre 2017"
+  event_when: "05 Dicembre 2017"
   event_where: "NOI Techpark"
   event_address: "Bolzano, Italia"
   event_organizers: "XPeppers"
@@ -138,4 +135,3 @@ it:
   travel_bicycling: "In bici"
   travel_walking: "A piedi"
   event_ortanized_with: "In collaborazione con"
-
