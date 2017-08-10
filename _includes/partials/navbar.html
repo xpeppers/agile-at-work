@@ -17,11 +17,15 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/2015">2015</a></li>
-        <!-- <li><a href="/">2017</a></li> -->
+        <li id="2015"><a href="/2015">2015</a></li>
+        <li id="2017"><a href="/">2017</a></li>
         <li><a href="/">EN</a></li>
         <li><a href="/it">IT</a></li>
         <li><a href="/de">DE</a></li>
+        <script>
+          var activeTab = /2015/.test(document.URL) ? '2015' : '2017'
+          document.getElementById(activeTab).classList.add('active')
+        </script>
       </ul>
     </div>
   </div>
