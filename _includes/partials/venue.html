@@ -1,12 +1,16 @@
+<div class="section-title wow fadeInUp">
+    <h4>LOCATION</h4>
+</div>
 <div class="g-maps" id="venue">
 
     <!-- Tip:  You can change location, zoom, color theme, height, image and Info text by changing data-* attribute below. -->
     <!-- Available Colors:    red, orange, yellow, green, mint, aqua, blue, purple, pink, white, grey, black, invert -->
 
-    <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="images/marker.png" data-info="{{ site.data.t[page.locale].location }}"></div>
+    <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="/images/marker.png" data-info="{{ site.data.t[page.locale].location }}"></div>
 </div>
 
-<section id="directions" class="directions vertical-space-lg">
+{% if includes.showDirections %}
+<section id="directions" class="directions vertical-space-lg" >
 
     <div class="container">
         <div class="section-title wow fadeInUp top-space-sm">
@@ -71,3 +75,4 @@
     </div>
 
 </section>
+{% endif %}
