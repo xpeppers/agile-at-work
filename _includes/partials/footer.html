@@ -1,15 +1,10 @@
 <footer>
-
-	<div>
-		Credits: Header image by Dario Coco
-	</div>
-
-<!--
-    <div class="social-icons">
-        <a href="#" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
-        <a href="#" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
-        <a href="#" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-linkedin"></i> </a>
-    </div>
--->
-
+  {% if include.credits != false %}
+    {% include partials/credits.html %}
+  {% endif %}
+  <div class="social-icons">
+    <a href="#" class="wow zoomIn"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
+    <a href="#" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-linkedin"></i> </a>
+  </div>
 </footer>
