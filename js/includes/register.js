@@ -14,7 +14,7 @@ $(function() {
 
     "use strict";
 
-    /* 
+    /*
     VALIDATE
     -------- */
 
@@ -44,7 +44,7 @@ $(function() {
 
             $(".js-register-btn").attr("disabled", true);
 
-            /* 
+            /*
             CHECK PAGE FOR REDIRECT (Thank you page)
             ---------------------------------------- */
 
@@ -56,7 +56,7 @@ $(function() {
 
             $("#js-register-result").html('<p class="help-block">Please wait...</p>');
 
-            /* 
+            /*
             FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
             --------------------------------------------- */
 
@@ -65,7 +65,7 @@ $(function() {
 
             var dataString = $(form).serialize();
 
-            /* 
+            /*
              AJAX POST
              --------- */
 

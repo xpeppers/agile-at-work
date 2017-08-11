@@ -1,10 +1,10 @@
 <?php
 
 /* CONFIGURATION HELP : You can Change :
-   
+
      ADMIN EMAIL
      MAIL CONTENTS
-     SANDBOX MODE 
+     SANDBOX MODE
      DEBUG MODE
  */
 
@@ -91,7 +91,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Connection: Close'));
 $res = curl_exec($ch);
 if (curl_errno($ch) != 0) // cURL error
 	{
-	if(DEBUG == true) {	
+	if(DEBUG == true) {
 		error_log(date('[Y-m-d H:i e] '). "Can't connect to PayPal to validate IPN message: " . curl_error($ch) . PHP_EOL, 3, LOG_FILE);
 	}
 	curl_close($ch);
@@ -130,16 +130,16 @@ if (strcmp ($res, "VERIFIED") == 0) {
 	$payer_email = $_POST['payer_email'];
 	$event_pass = $_POST['option_selection1'];
 	$quantity = $_POST['quantity'];
-	
- 
+
+
 $to      =  $payer_email;
 $subject = 'Your Seat is reserved for the event';
 $message = '
- 
+
 Hello,
- 
+
 Thank you so much for your registration. we look forward to see you there.
- 
+
 Your Event Pass information
 
 -------------------------
@@ -150,11 +150,11 @@ Seats reserved: '.$quantity.'
 PayPal Transaction ID : '.$txn_id.'
 -------------------------
 
-Venue Location :  https://goo.gl/maps/cSuf7 
+Venue Location :  https://goo.gl/maps/cSuf7
 
 (You can customize this message in /php/verify-ipn.php LINE 125 to 145)';
 $headers = 'From:no-reply@surjithctly.in' . "\r\n";
- 
+
 mail($to, $subject, $message, $headers);
 
 // Mail to Admin (SUCCESS)
@@ -163,11 +163,11 @@ mail($to, $subject, $message, $headers);
 $admin_to      = $receiver_email;
 $admin_subject = 'New registration of Gather Event';
 $admin_message = '
- 
+
 Hello,
- 
+
 There is a new registration for Gather Event
- 
+
 Attendee information
 -------------------------
 Email: '.$payer_email.'
@@ -180,30 +180,30 @@ PayPal Transaction ID : '.$txn_id.'
 (this is an automated message)
 ';
 $admin_headers = 'From:no-reply@surjithctly.in' . "\r\n";
- 
+
 mail($admin_to, $admin_subject, $admin_message, $admin_headers);
 
 
-	
+
 	if(DEBUG == true) {
 		error_log(date('[Y-m-d H:i e] '). "Verified IPN: $req ". PHP_EOL, 3, LOG_FILE);
 	}
 } else if (strcmp ($res, "INVALID") == 0) {
 	// log for manual investigation
 	// Add business logic here which deals with invalid IPN messages
-	
-	
+
+
 	// PAYMENT INVALID & INVESTIGATE MANUALY!
- 
+
 $to      = $receiver_email;
 $subject = 'Event Registration failed because of Invalid Payment';
 $message = '
- 
+
 Dear Administrator,
- 
+
 A payment for event registration has been made but is flagged as INVALID.
 Please verify the payment manualy and contact the buyer.
- 
+
 -------------------------
 Email: '.$payer_email.'
 Pass: '.$event_pass.'
@@ -214,10 +214,10 @@ PayPal Transaction ID : '.$txn_id.'
 
 ';
 $headers = 'From:no-reply@surjithctly.in' . "\r\n";
- 
+
 mail($to, $subject, $message, $headers);
-	
- 
+
+
 	if(DEBUG == true) {
 		error_log(date('[Y-m-d H:i e] '). "Invalid IPN: $req" . PHP_EOL, 3, LOG_FILE);
 	}

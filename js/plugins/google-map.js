@@ -161,7 +161,7 @@ function googleMap() {
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
-            
+
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map,marker);
         });

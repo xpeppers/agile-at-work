@@ -14,7 +14,7 @@ $(function() {
 
     "use strict";
 
-    /* 
+    /*
     VALIDATE
     -------- */
 
@@ -23,9 +23,9 @@ $(function() {
     }).validate({
         rules: {
             /* uncomment if Name is needed */
-            /* 
+            /*
             first_name: "required",
-            last_name: "required", 
+            last_name: "required",
             */
             email: {
                 required: true,
@@ -35,7 +35,7 @@ $(function() {
         messages: {
             /*
             first_name: "Your first name please",
-            last_name: "Your last name please", 
+            last_name: "Your last name please",
             */
             email: "Please enter your email address"
         },
@@ -43,7 +43,7 @@ $(function() {
 
             $("#js-subscribe-btn").attr("disabled", true);
 
-            /* 
+            /*
              CHECK PAGE FOR REDIRECT (Thank you page)
              ---------------------------------------- */
 
@@ -55,7 +55,7 @@ $(function() {
 
             $("#js-subscribe-result").fadeIn("slow").html('<p class="help-block">Please wait...</p>');
 
-            /* 
+            /*
              FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
              --------------------------------------------- */
 
@@ -64,7 +64,7 @@ $(function() {
 
             var dataString = $(form).serialize();
 
-            /* 
+            /*
              AJAX POST
              --------- */
 

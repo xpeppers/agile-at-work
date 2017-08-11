@@ -1,89 +1,85 @@
 <section class="schedule" id="schedule">
-
-    <div class="container">
-        <div class="section-title wow fadeInUp">
-            <h4>{{ site.data.t[page.locale].schedule }}</h4>
-            <h6>{{ site.data.t[page.locale].schedule_placeholder }}</h6>
-        </div>
-
-        <table class="table table-hover ">
-          <thead>
-            <tr>
-              <th class="text-center col-md-1"></th>
-              <th class="text-center col-md-3">Plenary hall</th>
-              <th class="text-center col-md-3">Multifunctional room 1</th>
-              <th class="text-center col-md-3">Multifunctional room 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="text-center warning">
-              <td>9:00</td>
-              <td><em>{{ site.data.t[page.locale].schedule_check_in}}</em></td>
-              <td colspan="2" style="vertical-align: middle">&nbsp;</td>
-            </tr>
-            <tr class="text-center success">
-              <td>9:45</td>
-              <td><em>{{ site.data.t[page.locale].schedule_opening}}</em></td>
-              <td colspan="2" style="vertical-align: middle">&nbsp;</td>
-            </tr>
-            <tr class="text-center">
-              <td>10:00</td>
-              <td class="schedule-bg-talk-1" style="vertical-align: middle">Keynote<br/><strong>Why you need to change your way of working</strong><br/><em>Roberto Bettazzoni</em></td>
-              <td colspan="2" class="schedule-bg-talk-1">&nbsp;</td>
-            </tr>
-            <tr class="text-center">
-              <td>10:45</td>
-              <td class="schedule-bg-talk-2">What is Agile?<br/><em>Marco Trincardi</em></td>
-              <td rowspan="2" style="vertical-align: middle">Open space</td>
-              <td rowspan="3" class="schedule-bg-workshop-1" style="vertical-align: middle">Workshop<br/>Product owner challenge<br/><em>Lorenzo Cassulo</em></td>
-            </tr>
-            <tr class="text-center">
-              <td>11:30</td>
-              <td class="schedule-bg-talk-1">Continuous Delivery on Java projects<br/><em>Paolo D'Incau</em></td>
-            </tr>
-            <tr class="text-center">
-              <td>12:15</td>
-              <td class="schedule-bg-talk-2">Hiring Great People<br/><em>Pietro Di Bello</em></td>
-              <td class="schedule-bg-talk-1">Event-driven (serverless) applications<br/><em>Danilo Poccia</em></td>
-            </tr>
-            <tr class="text-center success">
-              <td>13:00</td>
-              <td><em>{{ site.data.t[page.locale].schedule_lunch}}</em></td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-            <tr class="text-center">
-              <td>14:00</td>
-              <td class="schedule-bg-talk-1 schedule-valign-middle">Agile banks, is it an oxymoron?<br/><em>Marco Trincardi</em></td>
-              <td rowspan="2" class="schedule-bg-workshop-1" style="vertical-align: middle">Workshop<br/>Design your application on AWS<br/><em>Paolo Latella</em></td>
-              <td rowspan="2" class="schedule-bg-workshop-2" style="vertical-align: middle">Workshop<br/>TDD in Practice<br/><em>Ivan Lombardi Borgia, Manuela Munaretto</em></td>
-            </tr>
-            <tr class="text-center">
-              <td>14:45</td>
-              <td class="schedule-bg-talk-2">Extreme Contracts<br/>Turning negotiation into collaboration<br/><em>Jacopo Romei</em></td>
-            </tr>
-            <tr class="text-center success">
-              <td>15:30</td>
-              <td><em>{{ site.data.t[page.locale].schedule_coffee_break}}</em></td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-            <tr class="text-center">
-              <td>16:00</td>
-              <td class="schedule-bg-talk-1" style="vertical-align: middle">Test Driven Infrastructure<br/><em>Filippo Liverani</em></td>
-              <td rowspan="2" style="vertical-align: middle">Open space</td>
-              <td rowspan="2" class="schedule-bg-workshop-2" style="vertical-align: middle">Workshop<br/>TDD in Practice<br/><em>Ivan Lombardi Borgia, Manuela Munaretto</em></td>
-            </tr>
-            <tr class="text-center">
-              <td>16:45</td>
-              <td class="schedule-bg-talk-2" style="vertical-align: middle">Collective code ownership<br/>in Extreme Programming<br/><em>Dario Coco</em></td>
-            </tr>
-            <tr class="text-center success">
-              <td>17:30</td>
-              <td><em>{{ site.data.t[page.locale].schedule_ending}}</em></td>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-        </tbody>
-        </table> 
-
+  <div class="container">
+    <div class="section-title wow fadeInUp">
+      <h4>{{ site.data.t[page.locale].schedule }}</h4>
+      <h6>{{ site.data.t[page.locale].schedule_placeholder }}</h6>
     </div>
-
+    <table class="table table-hover ">
+      <thead>
+        <tr>
+          <th class="text-center col-md-1"></th>
+          <th class="text-center col-md-3">Plenary hall</th>
+          <th class="text-center col-md-3">Multifunctional room 1</th>
+          <th class="text-center col-md-3">Multifunctional room 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="text-center warning">
+          <td>9:00</td>
+          <td><em>{{ site.data.t[page.locale].schedule_check_in}}</em></td>
+          <td colspan="2" style="vertical-align: middle">&nbsp;</td>
+        </tr>
+        <tr class="text-center success">
+          <td>9:45</td>
+          <td><em>{{ site.data.t[page.locale].schedule_opening}}</em></td>
+          <td colspan="2" style="vertical-align: middle">&nbsp;</td>
+        </tr>
+        <tr class="text-center">
+          <td>10:00</td>
+          <td class="schedule-bg-talk-1" style="vertical-align: middle">Keynote<br/><strong>Why you need to change your way of working</strong><br/><em>Roberto Bettazzoni</em></td>
+          <td colspan="2" class="schedule-bg-talk-1">&nbsp;</td>
+        </tr>
+        <tr class="text-center">
+          <td>10:45</td>
+          <td class="schedule-bg-talk-2">What is Agile?<br/><em>Marco Trincardi</em></td>
+          <td rowspan="2" style="vertical-align: middle">Open space</td>
+          <td rowspan="3" class="schedule-bg-workshop-1" style="vertical-align: middle">Workshop<br/>Product owner challenge<br/><em>Lorenzo Cassulo</em></td>
+        </tr>
+        <tr class="text-center">
+          <td>11:30</td>
+          <td class="schedule-bg-talk-1">Continuous Delivery on Java projects<br/><em>Paolo D'Incau</em></td>
+        </tr>
+        <tr class="text-center">
+          <td>12:15</td>
+          <td class="schedule-bg-talk-2">Hiring Great People<br/><em>Pietro Di Bello</em></td>
+          <td class="schedule-bg-talk-1">Event-driven (serverless) applications<br/><em>Danilo Poccia</em></td>
+        </tr>
+        <tr class="text-center success">
+          <td>13:00</td>
+          <td><em>{{ site.data.t[page.locale].schedule_lunch}}</em></td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr class="text-center">
+          <td>14:00</td>
+          <td class="schedule-bg-talk-1 schedule-valign-middle">Agile banks, is it an oxymoron?<br/><em>Marco Trincardi</em></td>
+          <td rowspan="2" class="schedule-bg-workshop-1" style="vertical-align: middle">Workshop<br/>Design your application on AWS<br/><em>Paolo Latella</em></td>
+          <td rowspan="2" class="schedule-bg-workshop-2" style="vertical-align: middle">Workshop<br/>TDD in Practice<br/><em>Ivan Lombardi Borgia, Manuela Munaretto</em></td>
+        </tr>
+        <tr class="text-center">
+          <td>14:45</td>
+          <td class="schedule-bg-talk-2">Extreme Contracts<br/>Turning negotiation into collaboration<br/><em>Jacopo Romei</em></td>
+        </tr>
+        <tr class="text-center success">
+          <td>15:30</td>
+          <td><em>{{ site.data.t[page.locale].schedule_coffee_break}}</em></td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr class="text-center">
+          <td>16:00</td>
+          <td class="schedule-bg-talk-1" style="vertical-align: middle">Test Driven Infrastructure<br/><em>Filippo Liverani</em></td>
+          <td rowspan="2" style="vertical-align: middle">Open space</td>
+          <td rowspan="2" class="schedule-bg-workshop-2" style="vertical-align: middle">Workshop<br/>TDD in Practice<br/><em>Ivan Lombardi Borgia, Manuela Munaretto</em></td>
+        </tr>
+        <tr class="text-center">
+          <td>16:45</td>
+          <td class="schedule-bg-talk-2" style="vertical-align: middle">Collective code ownership<br/>in Extreme Programming<br/><em>Dario Coco</em></td>
+        </tr>
+        <tr class="text-center success">
+          <td>17:30</td>
+          <td><em>{{ site.data.t[page.locale].schedule_ending}}</em></td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>

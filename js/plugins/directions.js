@@ -47,7 +47,7 @@ function initialize() {
 
 function calcRoute() {
     initialize();
-    // get the travelmode, startpoint and via point from the form   
+    // get the travelmode, startpoint and via point from the form
     var travelMode = $('input[name="travelMode"]:checked').val();
     var start = $("#routeStart").val();
     var via = $("#routeVia").val();

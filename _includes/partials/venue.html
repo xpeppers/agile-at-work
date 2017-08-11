@@ -1,78 +1,65 @@
 <div class="section-title wow fadeInUp">
-    <h4>LOCATION</h4>
+  <h4>LOCATION</h4>
 </div>
 <div class="g-maps" id="venue">
-
-    <!-- Tip:  You can change location, zoom, color theme, height, image and Info text by changing data-* attribute below. -->
-    <!-- Available Colors:    red, orange, yellow, green, mint, aqua, blue, purple, pink, white, grey, black, invert -->
-
-    <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="/images/marker.png" data-info="{{ site.data.t[page.locale].location }}"></div>
+  <!-- Tip:  You can change location, zoom, color theme, height, image and Info text by changing data-* attribute below. -->
+  <!-- Available Colors:    red, orange, yellow, green, mint, aqua, blue, purple, pink, white, grey, black, invert -->
+  <div class="map" id="map_canvas" data-maplat="46.4821896" data-maplon="11.3305465" data-mapzoom="6" data-color="green" data-height="400" data-img="/images/marker.png" data-info="{{ site.data.t[page.locale].location }}"></div>
 </div>
-
 {% if includes.showDirections %}
-<section id="directions" class="directions vertical-space-lg" >
-
+  <section id="directions" class="directions vertical-space-lg" >
     <div class="container">
-        <div class="section-title wow fadeInUp top-space-sm">
-            <h4>{{ site.data.t[page.locale].get_directions }}</h4>
-            <p>{{ site.data.t[page.locale].get_directions_fill_out_form }}</p>
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-6">
-
-                <form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="routeStart">{{ site.data.t[page.locale].directions_from }}:</label>
-                                <input type="text" id="routeStart" class="form-control" placeholder="Milan">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="routeVia">{{ site.data.t[page.locale].via }}<small>(Optional)</small> </label>
-                                <input type="text" class="form-control" id="routeVia" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only">Travel mode:</label>
-
-                        <label class="radio-inline" for="travelMode1">
-                            <input type="radio" name="travelMode" id="travelMode1" value="DRIVING" checked />{{ site.data.t[page.locale].travel_driving }}                            </label>
-                        <label class="radio-inline" for="travelMode2">
-                            <input type="radio" name="travelMode" id="travelMode2" value="BICYCLING" />{{ site.data.t[page.locale].travel_bicycling }}
-                        </label>
-                        <!--
-                        <label class="radio-inline" for="travelMode3">
-                            <input type="radio" name="travelMode" id="travelMode3" value="TRANSIT" /> Public transport
-                        </label>
-                        -->
-                        <label class="radio-inline" for="travelMode4">
-                            <input type="radio" name="travelMode" id="travelMode4" value="WALKING" />{{ site.data.t[page.locale].travel_walking }}
-                        </label>
-
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-success btn-block"><i class="fa fa-location-arrow"></i> Get Directions </button>
-                    </div>
-                </form>
-
-            </div>
-
-            <div class="col-sm-6">
-                <div class="directions-results">
-
-                    <div id="directionsPanel">
-                        <div class="direction-text">{{ site.data.t[page.locale].directions_text }}</div>
-                    </div>
+      <div class="section-title wow fadeInUp top-space-sm">
+        <h4>{{ site.data.t[page.locale].get_directions }}</h4>
+        <p>{{ site.data.t[page.locale].get_directions_fill_out_form }}</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="routeStart">{{ site.data.t[page.locale].directions_from }}:</label>
+                  <input type="text" id="routeStart" class="form-control" placeholder="Milan">
                 </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="routeVia">{{ site.data.t[page.locale].via }}<small>(Optional)</small> </label>
+                  <input type="text" class="form-control" id="routeVia" value="">
+                </div>
+              </div>
             </div>
+            <div class="form-group">
+              <label class="sr-only">Travel mode:</label>
 
+              <label class="radio-inline" for="travelMode1">
+                <input type="radio" name="travelMode" id="travelMode1" value="DRIVING" checked />{{ site.data.t[page.locale].travel_driving }}                            </label>
+              <label class="radio-inline" for="travelMode2">
+                <input type="radio" name="travelMode" id="travelMode2" value="BICYCLING" />{{ site.data.t[page.locale].travel_bicycling }}
+              </label>
+              <!--
+              <label class="radio-inline" for="travelMode3">
+                <input type="radio" name="travelMode" id="travelMode3" value="TRANSIT" /> Public transport
+              </label>
+              -->
+              <label class="radio-inline" for="travelMode4">
+                <input type="radio" name="travelMode" id="travelMode4" value="WALKING" />{{ site.data.t[page.locale].travel_walking }}
+              </label>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-success btn-block"><i class="fa fa-location-arrow"></i> Get Directions </button>
+            </div>
+          </form>
         </div>
+        <div class="col-sm-6">
+          <div class="directions-results">
+            <div id="directionsPanel">
+              <div class="direction-text">{{ site.data.t[page.locale].directions_text }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-</section>
+  </section>
 {% endif %}
